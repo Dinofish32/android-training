@@ -6,13 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="next"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:onClick="nexted">
+    </Button>
+
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="age!"
+        app:layout_constraintTop_toBottomOf="@id/nameinput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <EditText
+        android:id="@+id/ageinput"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/age"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        app:layout_constraintTop_toBottomOf="@id/ageinput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <EditText
+        android:id="@+id/emailinput"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="birthday"
+        app:layout_constraintTop_toBottomOf="@id/emailinput"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <EditText
+        android:id="@+id/birthdayinput"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/birthday"
+        android:inputType="text"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
